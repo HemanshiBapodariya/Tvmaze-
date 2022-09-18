@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import Footer from "./footer";
+
 
 function Show() {
     const [inputVal, setInputVal] = useState("");
@@ -87,6 +89,9 @@ function Show() {
                             );
                         })}
                     </div>
+                    {
+                    showData.length ?  <Footer /> : ""
+                    }
         </>
     );
 }
